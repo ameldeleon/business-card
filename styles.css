@@ -5,11 +5,16 @@ body {
     Find a web safe font you like, and add it 
     to your card.
     */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .avatar {
     width: 150px;
+}
+
+@keyframes example {
+  from {background-color: #bc6c25;}
+  to {background-color: #fefae0;}
 }
 
 .card {
@@ -19,9 +24,13 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background: #ddebf8;
-    color: #2b2839;
-    border-bottom: 6px solid #d8cefe;
+    background: #fefae0;
+    color: #606c38;
+    border: 3px solid #606c38;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px #283618;
+    animation-name: example;
+    animation-duration: 4s;
         
     /*
     Challenge:
@@ -32,6 +41,10 @@ body {
 
 .border-blue {
     border: 1px dotted blue;
+}
+
+p:hover, h1:hover, a:hover {
+  background-color: yellow;
 }
 
 /*
@@ -46,8 +59,3 @@ the design of your business card, e.g.:
 - animations     🤯🤯🤯
 */
 
-/*
-Final challenge:
-Download the code to your local computer and place it
-in a folder called "business-card"
-*/
